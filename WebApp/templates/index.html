@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Labeling</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Data Labeling Interface</h1>
+    <form method="POST" action="/label">
+        <p>{{ entry.text }}</p>
+        <input type="hidden" name="entry_id" value="{{ entry.id }}">
+        <label for="sentiment">Label this data:</label>
+        <select name="sentiment">
+            <option value="positive">Positive</option>
+            <option value="neutral">Neutral</option>
+            <option value="negative">Negative</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+

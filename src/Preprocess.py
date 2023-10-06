@@ -51,7 +51,7 @@ def preprocess_csv(input_csv, output_csv):
 
 # Example usage
 if __name__ == "__main__":
-    input_csv = "input_data.csv"  # Replace with your CSV file
-    output_csv = "cleaned_data.csv"  # Replace with your desired output CSV file
+    input_csv = "../TestingData/training.1600000.processed.noemoticon.csv"  # scrape for more files soon so we have our own data, this is just some random shit for now
+    output_csv = "../data/processed/processedTraining.csv"  # Replace with your desired output CSV file
 
     preprocess_csv(input_csv, output_csv)
